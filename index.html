@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icons8-check-96.png">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="eisenhower-matrix">
+        <div class="quadrant" id="urgent-important">
+            <h2 class="header-primary">Do First</h2>
+            <h3 class="header-secondary">Urgent and Important</h3>
+            <div class="task-list">
+                <ul id="tasks-urgent-important"></ul>
+            </div>
+            <input type="text" class="task-input" placeholder="Add Task" />
+            <button class="add-task-btn" data-target="tasks-urgent-important">Add Task</button>
+        </div>
+        <div class="quadrant" id="not-urgent-important">
+            <h2 class="header-primary">Schedule</h2>
+            <h3 class="header-secondary">Not Urgent, but Important</h3>
+            <div class="task-list">
+                <ul id="tasks-not-urgent-important"></ul>
+            </div>
+            <input type="text" class="task-input" placeholder="Add Task" />
+            <button class="add-task-btn" data-target="tasks-not-urgent-important">Add Task</button>
+        </div>
+        <div class="quadrant" id="urgent-not-important">
+            <h2 class="header-primary">Delegate</h2>
+            <h3 class="header-secondary">Urgent, but not Important</h3>
+            <div class="task-list">
+                <ul id="tasks-urgent-not-important"></ul>
+            </div>
+            <input type="text" class="task-input" placeholder="Add Task" />
+            <button class="add-task-btn" data-target="tasks-urgent-not-important">Add Task</button>
+        </div>
+        <div class="quadrant" id="not-urgent-not-important">
+            <h2 class="header-primary">Don't Do</h2>
+            <h3 class="header-secondary">Not Urgent, Not Important</h3>
+            <div class="task-list">
+                <ul id="tasks-not-urgent-not-important"></ul>
+            </div>
+            <input type="text" class="task-input" placeholder="Add Task" />
+            <button class="add-task-btn" data-target="tasks-not-urgent-not-important">Add Task</button>
+        </div>
+    </div>
+    <div id="completed-tasks">
+        <h2>Completed Tasks</h2>
+        <ul id="tasks-completed"></ul>
+    </div>
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+

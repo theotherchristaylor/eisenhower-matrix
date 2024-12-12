@@ -1,0 +1,124 @@
+/* General styling for the page */
+body {
+    font-family: Consolas, monospace; /* Change font to Consolas */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Include padding in dimensions */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Eisenhower Matrix */
+#eisenhower-matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for the quadrants */
+    grid-template-rows: auto auto; /* Two rows for the quadrants */
+    grid-gap: 20px;
+    width: 100%; /* Full width of the window */
+    max-width: 1200px; /* Optional: Limit maximum width */
+    box-sizing: border-box; /* Include padding in dimensions */
+    margin-top: 50px; /* Add 50px buffer at the top */
+}
+
+/* Specific styling for each quadrant */
+#urgent-important {
+    border: 3pt solid #548C2F; /* Do First: Green border */
+}
+
+#not-urgent-important {
+    border: 3pt solid #A8D5E2; /* Schedule: Blue border */
+}
+
+#urgent-not-important {
+    border: 3pt solid #F9A620; /* Delegate: Orange border */
+}
+
+#not-urgent-not-important {
+    border: 3pt solid #6F1D1B; /* Don't Do: Red border */
+}
+
+.quadrant {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for section headers */
+.header-primary {
+    font-size: 1.2em; /* Reduced font size for the main header */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+}
+
+.header-secondary {
+    font-size: 0.8em; /* Reduced font size for the subtitle */
+    color: #555; /* Optional: make subtitle text slightly lighter */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+    line-height: 1.2; /* Adjust line spacing */
+}
+
+/* Styling for the task list section */
+.task-list {
+    width: 100%; /* Use full width */
+    height: 10em; /* Fixed height of 10 rows */
+    overflow-y: auto; /* Add scroll bar if tasks exceed the box height */
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1pt solid #545F66; /* Add 1pt border with color #545F66 */
+}
+
+/* Styling for the task input fields */
+.task-input {
+    width: 50ch; /* Fixed width of 50 characters */
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding in dimensions */
+    font-family: Consolas, monospace; /* Match font to the rest of the page */
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex; /* Flexbox for aligning buttons and text */
+    align-items: center; /* Center-align buttons and text */
+    margin: 5px 0;
+}
+
+/* Task buttons */
+button {
+    padding: 2px 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    flex-shrink: 0; /* Ensure buttons do not shrink */
+}
+
+/* Add spacing between the buttons */
+button + button {
+    margin-left: 5px;
+}
+
+/* Completed Tasks Section */
+#completed-tasks {
+    width: 100%; /* Full width of the page */
+    max-width: 1200px; /* Optional: Limit maximum width */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1pt solid #ccc;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Include padding in dimensions */
+}
+
+#completed-tasks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
